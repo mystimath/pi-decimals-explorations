@@ -29,10 +29,20 @@ Les outils sont classés et s'exécutent de la manière suivante :
 Pour chercher la position de la somme d'un carré magique ou d'une suite particulière (ex: `63738`, `16816`) dans votre fichier :
 
 ```bash
-python scripts/03_recherche_sequences.py --file pi_decimales.txt --sequences 63738 16816
+python scripts/03_recherche_sequences.py \
+  --file mystimath_pi_1000000001_2000000000.txt \
+  --offset 1000000000 \
+  --sequences 834159672
 
 ```
+## 3. Source des données
 
+Deux sources peuvent être utilisées selon le besoin :
+
+- MIT : téléchargement pratique du premier milliard de décimales avec `01_telecharger_un_milliard.py`.
+- Archive.org / P. Trueb : source de référence utilisée pour les tranches Mystimath publiées sur Archive.org.
+
+Pour les explorations publiées sur Mystimath, les fichiers de référence sont les tranches décimales Mystimath disponibles sur Archive.org.
 ---
 
 ## 🤝 Participer aux Explorations
