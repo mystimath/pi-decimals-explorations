@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- FICHIERS DE DONNÉES (TRÈS IMPORTANT) ---
+# On ignore toutes les bases de données texte lourdes locales
+*.txt
+*.csv
+*.zip
+*.gz
+*.tar
