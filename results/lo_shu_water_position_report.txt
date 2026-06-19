@@ -1,0 +1,32 @@
+Mystimath — Vérification de la chaîne Lo Shu eau dans π
+
+Motif recherché :
+834159672
+
+Fichier analysé :
+pi_decimales.txt
+
+Convention de rang :
+rang 1 = première décimale après la virgule de π
+
+Résultat :
+Nombre d’occurrences dans le premier milliard : 1
+Première position trouvée : rang 903,793,590
+
+Commande utilisée :
+python scripts/03_recherche_sequences.py --file pi_decimales.txt --sequences 834159672 --max-results 10
+
+Sortie obtenue :
+Motif : 834159672 (longueur 9)
+Nombre d'occurrences totales : 1
+Premières positions trouvées : rang 903,793,590
+
+Interprétation Mystimath :
+La chaîne 834159672 correspond au carré Lo Shu eau.
+Sa position 903,793,590 est divisible par 15.
+903,793,590 / 15 = 60,252,906.
+
+NB:
+Remplacer le nom du fichier du premier milliard des décimales pi par le nom donné à votre fichier local.
+Toujours vérifier les premières occurences du fichier en question : 3.14159265358979323846264 ou 14159265358979323846264
+Pour effectuer cette verification : python -c "f=open('pi_decimales.txt', encoding='utf-8'); print(f.read(25))"
